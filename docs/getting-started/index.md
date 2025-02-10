@@ -1,5 +1,5 @@
 # 系统配置
 
-> [Linux](OS Config/Linux.md)
+[Linux 配置](OS Config/Linux.md)
 
-> [Windows](OS Config/Windows.md)
+[Windows 配置](OS Config/Windows.md)
