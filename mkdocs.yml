@@ -1,0 +1,11 @@
+site_name: 我的文档
+nav:
+    - 首页: index.md
+    - 入门指南:
+          - 系统配置 - Mac: getting-started/OS Config/Linux.md
+          - 系统配置 - Windows: getting-started/OS Config/Windows.md
+    - 高级配置:
+          - 配置: advanced/configuration.md
+          - 排查问题: advanced/troubleshooting.md
+theme:
+    name: material
