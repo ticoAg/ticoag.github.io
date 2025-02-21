@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../gh-pages/">
+        <link rel="prev" href="../Linux/">
       
       
-        <link rel="next" href="../Windows/">
+        <link rel="next" href="../../../2.advanced/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>系统配置 - Mac - ticoAg's notes</title>
+        <title>系统配置 - Windows - ticoAg's notes</title>
       
     
     
@@ -61,11 +61,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#install-brew" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -98,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              系统配置 - Mac
+              系统配置 - Windows
             
           </span>
         </div>
@@ -254,19 +249,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Linux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -276,7 +262,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -286,10 +271,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Windows/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -299,6 +291,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -354,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2.%20advanced/" class="md-nav__link">
+      <a href="../../../2.advanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -412,7 +405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2.%20advanced/proxy/how-to-config-your-own-proxy-node/" class="md-nav__link">
+      <a href="../../../2.advanced/proxy/how-to-config-your-own-proxy-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -485,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../n.%20blogs/" class="md-nav__link">
+      <a href="../../../n.blogs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -543,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../n.%20blogs/notes/2025%E5%B9%B402%E6%9C%8821%E6%97%A5/" class="md-nav__link">
+      <a href="../../../n.blogs/notes/2025%E5%B9%B402%E6%9C%8821%E6%97%A5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -590,8 +583,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -607,70 +598,9 @@
 
 
 
-<h1 id="install-brew">Install brew</h1>
-<pre><code class="language-sh">/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;
-</code></pre>
-<h1 id="bashrc">.bashrc</h1>
-<pre><code class="language-sh">export PS1=&quot;\e[01;36m\][\t] ${debian_chroot:+($debian_chroot)}\u@\h\[\e[01;35m\]:\w\n\[\e[01;33m\]$\[\e[00m\] &quot;
+  <h1>系统配置 - Windows</h1>
 
-export HF_ENDPOINT=https://hf-mirror.com
 
-alias n='nvidia-smi'
-alias nvi='watch -n 0.1 nvidia-smi'
-alias nvfind='fuser -v /dev/nvidia*'
-
-alias sdi='sudo dpkg -i'
-alias l='ls -alF -h'
-alias d='du -h --max-depth 1'
-alias cb='cat ~/.bashrc'
-alias vb='vi ~/.bashrc'
-alias sb='source ~/.bashrc'
-alias sc='screen'
-alias cc='/home/user/opt/clash/clash -d /home/user/opt/clash'
-alias tat='tmux a -t'
-alias tl='tmux ls'
-alias jfu='journalctl -f -u'
-
-function psfind() {
-        ps aux | head -n 1
-        ps aux | grep -E $1 | grep -v grep
-}
-function sp() {
-        export http_proxy=http://127.0.0.1:7891
-        export HTTP_PROXY=http://127.0.0.1:7891
-        export https_proxy=http://127.0.0.1:7891
-        export HTTPS_PROXY=http://127.0.0.1:7891
-        export all_proxy=socks://127.0.0.1:7891
-        export ALL_PROXY=socks://127.0.0.1:7891
-        echo 'set proxy'
-}
-function usp() {
-        unset http_proxy
-        unset HTTP_PROXY
-        unset https_proxy
-        unset HTTPS_PROXY
-        unset all_proxy
-        unset ALL_PROXY
-        echo 'unset proxy'
-}
-
-# &gt;&gt;&gt; conda initialize &gt;&gt;&gt;
-CONDA_PATH=/home/**/opt/miniconda3
-BIN_PATH=$CONDA_PATH/bin/conda
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup=&quot;$($BIN_PATH 'shell.bash' 'hook' 2&gt; /dev/null)&quot;
-if [ $? -eq 0 ]; then
-    eval &quot;$__conda_setup&quot;
-else
-    if [ -f &quot;$CONDA_PATH/etc/profile.d/conda.sh&quot; ]; then
-        . &quot;$CONDA_PATH/etc/profile.d/conda.sh&quot;
-    else
-        export PATH=&quot;$CONDA_PATH/bin:$PATH&quot;
-    fi
-fi
-unset __conda_setup
-# &lt;&lt;&lt; conda initialize &lt;&lt;&lt;
-</code></pre>
 
 
 
