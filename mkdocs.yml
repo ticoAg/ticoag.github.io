@@ -1,11 +1,17 @@
-site_name: 我的文档
+site_name: ticoAg's notes
 nav:
     - 首页: index.md
     - 入门指南:
-          - 系统配置 - Mac: getting-started/OS Config/Linux.md
-          - 系统配置 - Windows: getting-started/OS Config/Windows.md
+        - Home: 1. getting-started/index.md
+        - github-pages: 1. getting-started/gh-pages.md
+        - 系统配置 - Mac: 1. getting-started/OS Config/Linux.md
+        - 系统配置 - Windows: 1. getting-started/OS Config/Windows.md
     - 高级配置:
-          - 配置: advanced/configuration.md
-          - 排查问题: advanced/troubleshooting.md
+        - 配置: advanced/configuration.md
+    - 随笔blogs:
+        - Home: n. blogs/index.md
+        - 笔记:
+            - 2025年02月21日: n. blogs/notes/2025年02月21日.md
+
 theme:
     name: material
