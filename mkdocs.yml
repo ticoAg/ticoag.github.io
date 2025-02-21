@@ -2,22 +2,22 @@ site_name: ticoAg's notes
 nav:
     - 首页: index.md
     - 入门指南:
-        - Home: 1. getting-started/index.md
-        - github-pages: 1. getting-started/gh-pages.md
-        - 系统配置 - Mac: 1. getting-started/OS Config/Linux.md
-        - 系统配置 - Windows: 1. getting-started/OS Config/Windows.md
+          - Home: 1.getting-started/index.md
+          - github-pages: 1.getting-started/gh-pages.md
+          - 系统配置 - Mac: 1.getting-started/OS Config/Linux.md
+          - 系统配置 - Windows: 1.getting-started/OS Config/Windows.md
     - 进阶教程:
-        - Home: 2. advanced/index.md
-        - 代理: 
-            - 使用自己的境外服务器配置代理节点: 2. advanced/proxy/how-to-config-your-own-proxy-node.md
+          - Home: 2.advanced/index.md
+          - 代理:
+                - 使用自己的境外服务器配置代理节点: 2.advanced/proxy/how-to-config-your-own-proxy-node.md
     - 随笔blogs:
-        - Home: n. blogs/index.md
-        - 笔记:
-            - 2025年02月21日: n. blogs/notes/2025年02月21日.md
+          - Home: n.blogs/index.md
+          - 笔记:
+                - 2025年02月21日: n.blogs/notes/2025年02月21日.md
 
 theme:
     name: material
-    custom_dir: overrides  #主要是这一行
+    custom_dir: overrides #主要是这一行
 
 plugins:
     - meta
