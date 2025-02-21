@@ -4,4 +4,11 @@
 
 [入门指南](1. getting-started/index.md)
 
-[高级配置](advanced/configuration.md)
+- 系统配置
+    - [linux](1. getting-started/OS Config/Linux.md)
+    - [windows](1. getting-started/OS Config/Windows.md)
+- [github-pages发布](1. getting-started/gh-pages.md)
+
+[进阶教程](2. advanced/index.md)
+
+- [使用自己的境外服务器配置代理节点](2. advanced/proxy/how-to-config-your-own-proxy-node.md)
