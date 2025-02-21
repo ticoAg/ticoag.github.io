@@ -78,6 +78,3 @@ proxies:
 
 
 
----
-comments: true  #默认不开启评论
----
